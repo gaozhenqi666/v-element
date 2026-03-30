@@ -1,0 +1,51 @@
+.vk-form {
+  --vk-form-label-width: 90px;
+}
+
+.vk-form-item {
+  display: flex;
+  margin-bottom: 18px;
+}
+
+.vk-form--inline .vk-form-item {
+  display: inline-flex;
+  margin-right: 24px;
+  vertical-align: top;
+}
+
+.vk-form-item__label {
+  width: var(--vk-form-label-width);
+  box-sizing: border-box;
+  padding-right: 12px;
+  text-align: right;
+  line-height: 32px;
+  color: var(--vk-text-color-regular);
+  flex-shrink: 0;
+}
+
+.vk-form-item__label-inner {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+}
+
+.vk-form-item__required {
+  color: var(--vk-color-danger);
+}
+
+.vk-form-item__content {
+  flex: 1;
+  min-width: 0;
+}
+
+.vk-form-item__error {
+  color: var(--vk-color-danger);
+  font-size: 12px;
+  line-height: 1.2;
+  padding-top: 6px;
+}
+
+.vk-form-item.is-error .vk-input__wrapper {
+  box-shadow: 0 0 0 1px var(--vk-color-danger) inset;
+}
