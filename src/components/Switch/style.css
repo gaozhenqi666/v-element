@@ -11,20 +11,6 @@
   font-size: 14px;
   line-height: 20px;
   height: 32px;
-  .vk-switch__label {
-    font-size: 14px;
-    color: var(--vk-text-color-regular);
-    user-select: none;
-  }
-  .vk-switch__label--left {
-    margin-right: 8px;
-  }
-  .vk-switch__label--right {
-    margin-left: 8px;
-  }
-  .vk-switch__label.is-active {
-    color: var(--vk-color-primary);
-  }
   .vk-swtich__input {
     position: absolute;
     width: 0;
@@ -128,5 +114,13 @@
     align-items: center;
     overflow: hidden;
     padding: 0 4px 0 18px;
+    .vk-switch__core-inner-text {
+      font-size: 12px;
+      color: var(--vk-color-white);
+      user-select: none;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
   }
 }
