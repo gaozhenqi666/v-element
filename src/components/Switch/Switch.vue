@@ -8,6 +8,13 @@
   }"
   @click="switchValue"
 >
+  <span
+    v-if="inactiveText"
+    class="vk-switch__label vk-switch__label--left"
+    :class="{ 'is-active': !checked }"
+  >
+    {{ inactiveText }}
+  </span>
   <input 
     class="vk-swtich__input"
     type="checkbox"
@@ -19,13 +26,17 @@
   />
   <div class="vk-switch__core">
     <div class="vk-switch__core-inner">
-      <span v-if="activeText || inactiveText" class="vk-switch__core-inner-text">
-        {{checked ? activeText : inactiveText}}
-      </span>
     </div>
     <div class="vk-switch__core-action">
     </div>
   </div>
+  <span
+    v-if="activeText"
+    class="vk-switch__label vk-switch__label--right"
+    :class="{ 'is-active': checked }"
+  >
+    {{ activeText }}
+  </span>
 </div>
 </template>
 
