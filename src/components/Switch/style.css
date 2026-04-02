@@ -39,6 +39,9 @@
       }
       .vk-switch__core-inner {
         padding: 0 18px 0 4px;
+        .vk-switch__core-inner-text {
+          color: var(--vk-color-white);
+        }
       }
     }
   }
@@ -116,7 +119,7 @@
     padding: 0 4px 0 18px;
     .vk-switch__core-inner-text {
       font-size: 12px;
-      color: var(--vk-color-white);
+      color: var(--vk-text-color-regular);
       user-select: none;
       overflow: hidden;
       text-overflow: ellipsis;
